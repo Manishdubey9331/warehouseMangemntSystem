@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .team-member {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+    .team-member button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .team-member p {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="team-member" id="member3">
+    <h2>Ankit Kumar Gupta</h2>
+    <img src="./../ankit.jpeg" alt="ankitimage" height="70px">
+    <p>Role: Project Manager
+      <br><br>
+    Description: Ankit is an organized and detail-oriented project manager with a proven track record of successful project delivery.</p>
+    <button onclick="toggleInfo('member3')">Show/Hide Info</button>
+  </div>
+  
+  <div class="team-member" id="member4">
+    <h2>Aranya Das</h2>
+    <img src="./../aranya.jpeg" alt="aranyaimage" height="70px">
+    <p>Role: Marketing Specialist
+      <br><br>
+    Description: Aranya is a creative marketing specialist with a focus on developing effective strategies to promote our products and services.</p>
+    <button onclick="toggleInfo('member4')">Show/Hide Info</button>
+  </div>
+
+ 
+
+<div class="team-member" id="member2">
+  <h2>Dhruaj Dey</h2>
+  <img src="./../raj.jpg" alt="rajimage" height="70px">
+  <p>Role: Graphic Designer
+    <br><br>
+  Description: Dhruvraj is a talented graphic designer with a passion for creating visually appealing and user-friendly designs.</p>
+  <button onclick="toggleInfo('member2')">Show/Hide Info</button>
+</div>
+
+
+
+<div class="team-member" id="member1">
+  <h2>Manish Dubey</h2>
+  <img src="./../manish.jpg" alt="manishimage" height="70px">
+  <p>Role: Software Developer
+<br><br>Description: Manish is an experienced software developer with expertise in web development and database management.</p>
+  <button onclick="toggleInfo('member1')">Show/Hide Info</button>
+</div>
+<script>
+  function toggleInfo(memberId) {
+    var memberInfo = document.getElementById(memberId).getElementsByTagName('p')[0];
+    if (memberInfo.style.display === 'none' || memberInfo.style.display === '') {
+      memberInfo.style.display = 'block';
+    } else {
+      memberInfo.style.display = 'none';
+    }
+  }
+</script>
+
+</body>
+</html>

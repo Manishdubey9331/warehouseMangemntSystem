@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>amazon.com</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-display: arial;
+    }
+    .navbar1{
+        height: 80px;
+        background-color: #080515;
+        color: aliceblue;
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+    .navbar2{
+        height: 40px;
+        background-color: #070c46c7;
+        color: white;
+     
+    }
+    .nav-logo{
+        height: 50px;
+        width: 100px;
+      
+    }
+    .logo{
+        padding: 5px;
+        background-image: url("logo.png");
+        background-size: cover;
+        height: 50px;
+        width: 100%; 
+    }
+    
+    .border{
+        border: 2px solid transparent;
+    }
+    .border :hover{
+        border: 2px solid bisque;
+    }
+    .nav-address{
+        position: relative;
+        top: 15px;
+        left: 5px;
+        
+    
+    }
+    .add1{
+       position: relative;
+       left: 20px;
+       color: hwb(180 74% 25% / 0.851);
+       font-size: small;
+
+    }
+
+
+    button {
+      background-color: #FF9900; /* Choose your button background color */
+      color: #fff; /* Choose your button text color */
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #6dff33; /* Change the color on hover */
+        transform: scale(1.1);
+    }
+
+
+
+    .add2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1px;
+    }
+    .add3{
+        margin-left: 2px;
+    }
+    .nav-search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #all-ser1{
+        height: 43px;
+        width: 50px;
+        margin-left: 40px;
+        border-right: none;
+        border-top-left-radius:5px ;
+        border-bottom-left-radius: 5px;
+    }
+    .ser2{
+        width: 700px;
+        height: 40px;
+    
+
+    }
+    .ser3{
+        height: 43px;
+        width: 39px;
+        background-color: rgb(195, 72, 15);
+        color: #080515;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;  
+        border-top-right-radius:5px ;
+        border-bottom-right-radius: 5px;
+    }
+    #all-ser1:hover{
+        border: 2px solid rgb(251, 91, 33);
+        border-right: none;
+    }
+    .ser2:hover{
+        border: 2px solid rgb(251, 91, 33);
+        border-left:none ;
+        border-right: none;
+    }
+   
+    .ser3:hover{
+        border: 2px solid rgb(251, 91, 33);
+        border-left: none;
+    }
+    
+   .hello {
+    margin-top: 16px;
+   }
+   .return {
+    margin-top: 7px;
+   }
+   .cart {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+   }
+    .cart1 i{
+        font-size: xx-large;
+    }
+    .cart2{
+        margin-top: 16px;
+    }
+    #hello2{
+        color: aliceblue;
+        background-color: #080515;
+        border: none;
+        
+        
+    }
+    .hello1{
+        margin-left: 4px;
+        font-size: 0.8rem;
+    }
+    .return{
+        font-size: 0.8rem;
+    }
+.icon{
+width: 30%;
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-between;
+
+}
+
+#icon1 i{
+    font-size: larger;
+}
+.body1{
+    height: 340px;
+    background-size: cover;
+        background-image: url(hero.jpg);
+        margin-right: 25px;
+        margin-left: 25px ;
+    
+        
+}
+.body2{
+    height: 40px;
+    top: 275px;
+    background-color:aliceblue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    
+}
+.body2,a{
+    text-decoration: none;
+}
+.body3{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    height: 400px;
+    width: 300px;
+    margin: 35px;
+
+}
+.box-img{
+height: 300px;
+background-size: cover;
+}
+.content p{
+
+color: rgba(0, 174, 255, 0.743);
+padding: 15px;
+
+} 
+.footer1{
+margin: 20px;
+margin-bottom: none;
+height: 100px;
+margin-bottom: none;
+text-align: center;
+} 
+.but1{
+margin: 8px;
+margin-bottom: none;
+text-align: center;
+font-size: large;
+border-radius: 5px;
+background-color: goldenrod;
+border: none;
+}
+.footer2{
+position: relative;
+height: 50px;
+color: white;
+background-color: rgb(60, 44, 147);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.footer3{
+height: 350px;
+background-color: rgb(93, 93, 220);
+display: flex;
+justify-content: space-around;
+
+}
+.f3a,.f3b,.f3c{
+margin: 10px;
+padding: 25px;
+line-height: 29px;
+
+}
+.footer4{
+border: 1px solid black;
+height: 70px;
+border-color: rgba(0, 0, 0, 0.581);
+background-color: rgb(93, 93, 220);
+display: flex;
+justify-content: space-around;
+padding: 15px;
+}
+
+#f4a{
+background-color:rgb(93, 93, 220); ;
+    color: white
+}
+#f4b{
+background-color:rgb(93, 93, 220); ;
+    color: white;
+}
+#f4c{
+background-color:rgb(93, 93, 220); ;
+    color: aliceblue;
+}
+</style>
+</head>
+<body>
+<div class="navbar1"  >
+<div class="nav-logo border" >
+<div class="logo"></div>
+</div>
+<div class="nav-address">
+<div class="add1"><p>Deliver to</p></div>
+
+<div class="add2">
+<i class="fa-sharp fa-solid fa-location-dot"></i>
+<p class="add3">India</p>
+</div>
+</div>
+<div class="nav-search">
+<select name="all" id="all-ser1">
+<option value="all">All</option>
+</select>
+<input type="text" class="ser2" placeholder="Search Amazon">
+<div class="ser3">
+<i class="fa-solid fa-magnifying-glass"></i>
+</div>
+</div>
+<div class="hello border mid">
+<div class="hello1">
+<p>Hello,sign in</p>
+</div>
+<div class="hello2">
+<select name="hello2" id="hello2">
+<option value="account "><b>Account & Lists</b></option>
+</select>
+</div>
+</div>
+<div class="return border mid">
+<div class="return">
+<p>Returns</p>
+</div>
+<div class="return2">
+<p><b>& Orders</b></p>
+</div>
+</div>
+<div class="cart border mid">
+<div class="cart1">
+<i class="fa-sharp fa-solid fa-cart-shopping"></i>
+</div>
+<div class="cart2"><p><b>Cart</b></p></div>
+</div>
+</div>
+<div class="navbar2">
+<div class="icon">
+
+<p id="icon1"><i class="fa-solid fa-bars"></i><b>All</b></p>
+
+
+<p>Amazon miniTV</p>
+<p>Sell</p>
+<p>Best sellers</p>
+<p>Mbile</p>
+<p>Today's Deals</p>
+</div>
+</div>
+<div class="body1">
+<div class="body2">
+<p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="#">Click here to go to amazon.in</a></p>
+</div>
+</div>
+<div class="body3">
+<div class="box1 box" >
+<div class="content">
+<h1>Kids</h1>
+<div class="box-img" style="background-image: url('box1.jpg');"> </div>
+<button type="button" onclick="proceedToPayment('Kids')">ShopNow</button>
+</div>
+</div>
+<div class="box2 box">
+<div class="content">
+    <h1>Cosmetics</h1>
+    <div class="box-img" style="background-image: url('box2.jpg');"> </div>
+   <button type="button" onclick="proceedToPayment('Cosmetics')">ShopNow</button>
+
+    </div>
+</div>
+<div class="box3 box">
+<div class="content">
+    <h1>Furinture</h1>
+    <div class="box-img" style="background-image: url('box3.jpg');"> </div>
+   <button type="button" onclick="proceedToPayment('Furniture')">ShopNow</button>
+
+    </div>
+</div>
+<div class="box4 box">
+<div class="content">
+    <h1>Electronics</h1>
+    <div class="box-img" style="background-image: url('box4.jpg');"> </div>
+   <button type="button" onclick="proceedToPayment('Electronics')">ShopNow</button>
+
+    
+    </div>
+</div>
+
+<div class="box5 box">
+<div class="content">
+    <h1>Sea drive</h1>
+    <div class="box-img" style="background-image: url('box5.jpg');"> </div>
+   <button type="button" onclick="proceedToPayment('Sea-Drive')">ShopNow</button>
+
+    </div>
+</div>
+<div class="box6 box">
+<div class="content">
+    <h1>Beauty clothes</h1>
+    <div class="box-img" style="background-image: url('box6.jpg');"> </div>
+   <button type="button" onclick="proceedToPayment('Beauty-clothes')">ShopNow</button>
+
+    </div>
+</div>
+<div class="box7 box">
+<div class="content">
+    <h1>Interior design</h1>
+    <div class="box-img" style="background-image: url('box7.jpg');"> </div>
+   <button type="button" onclick="proceedToPayment('InteriorDesign')">ShopNow</button>
+
+    </div>
+</div>
+<div class="box8 box"><div class="content">
+<h1>Gym</h1>
+<div class="box-img" style="background-image: url('box8.jpg');"> </div>
+<button type="button" onclick="proceedToPayment('GymItems')">ShopNow</button>
+
+</div></div>
+</div>
+
+
+
+<div class="body4">
+<div class="footer1">
+    <hr><br>
+    <p>See personalized recommendations</p>
+    <div class="sign">
+
+    <input type="text" class="but1" placeholder="Sign in">
+    </div>
+    <p>
+        New customer? <a href="#">Start here.</a>
+    </p>
+    <br><hr>
+</div>
+<div class="footer2">
+    <p>Back to top</p>
+</div>
+
+
+    <div class="footer3">
+        <div class="f3a">
+            <h3>Get to Know Us</h3>
+            <p>Careers</p>
+            <p>Blog</p>
+            <p>About Amazon</p>
+            <p>Investor Relations</p>
+            <p>Amazon Devices</p>
+            <p>Amazon Science</p>
+</div>
+<div class="f3b">
+    <h3>Make Money with Us</h3>
+  <p>  Sell products on Amazon</p>
+   <p> Sell on Amazon Business</p>
+   <p> Sell apps on Amazon</p>
+  <p>  Become an Affiliate</p>
+    <p>Advertise Your Products</p>
+  <p>  Self-Publish with Us</p>
+  <p>  Host an Amazon Hub</p>
+
+</div>
+<div class="f3c">
+<h3>    Amazon Payment Products</h3>
+<p>Amazon Business Card</p>
+<p>Shop with Points</p>
+<p>Reload Your Balance</p>
+<p>Amazon Currency Converter</p>
+
+</div>
+</div>
+<div class="footer4">
+    <div class="imgf4a">
+        <img src="logo.png" height="50px" width="120px">
+        </div>
+        <div class="f4"><input type="text" id="f4a" placeholder="English">
+      <input type="text"  id="f4b" placeholder="$ USD-U.S.Dollar">
+         <input type="text"  id="f4c" placeholder="United States"></div>
+       
+    </div>
+</div>
+</body>
+
+
+
+    <script>
+    function proceedToPayment(item) {
+        // You can perform additional actions based on the selected item if needed
+        alert("Selected Item: " + item + "\nRedirecting to paymentMethod...");
+        // You can redirect to a payment page or perform other actions here
+        window.location.href="payment.html"
+    }
+</script>
+</script>
+</html>

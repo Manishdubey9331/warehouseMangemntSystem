@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Management System - Login</title>
+    <style>
+       
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('warehouse.avif'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+            background-size: cover; /* Adjust as needed */
+        }
+
+        #login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="login-container">
+        <h2>Warehouse Management System</h2>
+        
+        <form id="login-form">
+            <label for="user-type">Select User Type:</label>
+            <select id="user-type">
+                <option value="admin">Admin</option>
+                <option value="customer">Customer</option>
+            </select>
+    
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+
+    <script>
+
+            function login() {
+    var userType = document.getElementById('user-type').value;
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    if (userType === 'admin') {
+        // Admin login logic
+        // Example: Check username and password for admin
+        if (username === 'admin' && password === '1234') {
+            alert('Admin login successful!');
+            window.location.href = 'whht.html';
+            // Redirect or perform admin-specific actions
+        } else {
+            alert('Invalid admin credentials. Please try again.');
+        }
+    } else if (userType === 'customer') {
+        // Customer login logic
+        // Example: Check username and password for customer
+        if (username === 'custm' && password === 'abcd') {
+            alert('Customer login successful!');
+            window.location.href='amazon/amazon.html';
+            // Redirect or perform customer-specific actions
+        } else {
+            alert('Invalid customer credentials. Please try again.');
+        }
+    } else {
+        alert('Please select a user type.');
+    }
+}
+
+        
+        
+    </script>
+
+</body>
+</html>

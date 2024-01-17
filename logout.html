@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('t.avif'); 
+            background-size:cover ;
+            margin: 50px;
+
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        #logout-btn {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #logout-btn:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Logout</h1>
+
+    <p>Are you sure you want to logout?</p>
+
+    <button id="logout-btn">Logout</button>
+
+    <script>
+        // Add a click event listener to the logout button
+        document.getElementById('logout-btn').addEventListener('click', function() {
+            // Perform logout actions, such as making an AJAX request or redirecting to a logout script
+            // For simplicity, let's assume a redirect to a logout_process.php script
+            window.location.href = 'login.html';
+        });
+    </script>
+
+</body>
+</html>

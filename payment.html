@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .payment-form {
+            max-width: 400px;
+            margin: auto;
+        }
+        .payment-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .payment-option input {
+            margin-right: 10px;
+        }
+        .cancel-btn {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .cancel-btn:hover {
+            background-color: #c0392b;
+        }
+        .proceed-btn {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .proceed-btn:hover {
+            background-color: #27ae60;
+        }
+    </style>
+    <title>Payment Form</title>
+</head>
+<body>
+
+    <div class="payment-form">
+        <h2>Payment Options</h2>
+
+        <div class="payment-option">
+            <input type="radio" id="upi" name="paymentMethod" value="upi">
+            <label for="upi">UPI</label>
+        </div>
+
+        <div class="payment-option">
+            <input type="radio" id="netbanking" name="paymentMethod" value="netbanking">
+            <label for="netbanking">Net Banking</label>
+        </div>
+
+        <!-- Add more payment options as needed -->
+
+        <div class="buttons">
+            <button class="cancel-btn" onclick="cancelPayment()">Cancel</button>
+            <button class="proceed-btn" onclick="proceedToPayment()">Proceed to Payment</button>
+        </div>
+    </div>
+
+    <script>
+        function cancelPayment() {
+            alert("Payment canceled. Redirecting to homepage...");
+            // You can redirect to the homepage or perform other actions here
+            window.location.href="amazon.html"
+        }
+
+        function proceedToPayment() {
+            var selectedPaymentMethod = document.querySelector('input[name="paymentMethod"]:checked');
+            
+            if (selectedPaymentMethod) {
+                alert("Selected Payment Method: " + selectedPaymentMethod.value + "\nRedirecting to payment...");
+                // You can redirect to a payment page or perform other actions here
+                if(selectedPaymentMethod.value==="upi")
+                {
+                    window.location.href="upipayment.html"
+                }
+            } else {
+                alert("Please select a payment method.");
+            }
+        }
+    </script>
+
+</body>
+</html>
